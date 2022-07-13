@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{/*Definir font-family*/
+    --fonte01: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-titulo: 'Arvo', serif;
+}
+
+li > a{
+    text-decoration: none;
+    font-family: var(--fonte01);
+    color: red;
+
+}
+
+/*Header*/
+
+#top-detail{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#top-center{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#top-center-610px{
+    display: none;
+    color: white;
+}
+
+.vendas{
+    text-decoration: none;
+    color: white;
+}
+
+.social{
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.logo{
+    font-family: var(--fonte-titulo);
+    color: rgb(105, 2, 2);
+    text-align: right;
+    font-size: 25px;
+}
+
+.li-nav{
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 1em;
+    margin-left: 15px;
+}
+
+#img-principal{
+    width: 98.7vw;
+    height: 100%;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(105, 2, 2);
+    height: 100vh;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-top: 1%;
+}
+
+#container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    flex-wrap: wrap;
+    padding-bottom: 50%;
+}
+
+#feira{
+    width: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    color: 1e1e1e;
+}
+
+#feira > h1{
+    font-family: var(--fonte-titulo);
+    text-align: right;
+    padding-bottom: 10px;
+}
+#boneco{
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid red;
+    margin-top: 20px;
+    color:  rgb(105, 2, 2);;
+}
+
+
+#video{
+    width: 79vw;
+    height: 44.43vw;
+    margin: auto;
+}
+
+/*Espaços temáticos*/
+
+.tematicos{
+    display: flex;
+}
+
+.text-tematicos > h1 {
+    font-family: var(--fonte-titulo);
+    padding-bottom: 20px;
+    font-size: 2.em;
+}
+
+.text-tematicos > p {
+    padding-bottom: 20px;
+    text-align: justify;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    font-size: 20px;
+} 
+
+@media (max-width: 610px) {
+    .vendas{
+        display: none;
+    }
+
+    .top-center-610px{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        color: red;
+        background-color: red;
+    }
+
+    .social{
+        display: none;
+    }
+}
